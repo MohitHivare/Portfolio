@@ -9,7 +9,7 @@ import './index.css'
 import App from './App.tsx'
 
 // Initialize theme before React renders
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
 
 createRoot(document.getElementById('root')!).render(
