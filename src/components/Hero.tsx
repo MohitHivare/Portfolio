@@ -26,7 +26,7 @@ const Hero = () => {
           >
             <div className="relative w-[180px] h-[180px] mx-auto">
               <img 
-                src="/profile-image.png" 
+                src={`${import.meta.env.BASE_URL}profile-image.png`}
                 alt="Profile" 
                 className="w-[180px] h-[180px] rounded-full object-cover border-4 border-accent/30 shadow-[0_20px_60px_rgba(100,108,255,0.4)] relative z-10 transition-all duration-300 block hover:scale-105 hover:shadow-[0_25px_70px_rgba(100,108,255,0.5)]"
                 onError={(e) => {
@@ -91,7 +91,7 @@ const Hero = () => {
             </button>
             <button
               className="px-9 py-4 border-2 border-gray-300 dark:border-gray-400 rounded-2xl text-base font-semibold cursor-pointer flex items-center gap-2 bg-white dark:bg-white text-gray-900 dark:text-gray-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)]"
-              onClick={() => window.open('/Mohit Rajesh Hivare Resume.pdf', '_blank')}
+              onClick={() => window.open(`${import.meta.env.BASE_URL}Mohit Rajesh Hivare Resume.pdf`, '_blank')}
               aria-label={t('hero.downloadResume')}
             >
               <FaDownload /> {t('hero.downloadResume')}
