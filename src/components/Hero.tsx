@@ -91,7 +91,7 @@ const Hero = () => {
             </button>
             <button
               className="px-9 py-4 border-2 border-gray-300 dark:border-gray-400 rounded-2xl text-base font-semibold cursor-pointer flex items-center gap-2 bg-white dark:bg-white text-gray-900 dark:text-gray-900 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(0,0,0,0.1)]"
-              onClick={() => window.open(`${import.meta.env.BASE_URL}Mohit Rajesh Hivare Resume.pdf`, '_blank')}
+              onClick={() => window.open(`${import.meta.env.BASE_URL}MOHIT_RAJESH_HIVARE_CV.pdf`, '_blank')}
               aria-label={t('hero.downloadResume')}
             >
               <FaDownload /> {t('hero.downloadResume')}
